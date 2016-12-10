@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <link rel="stylesheet" type="text/css" href="javascripts/highlight/styles/default.css" media="screen">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Htmlcss by alekskorovin</title>
+</head>
+
+<body>
+<header>
+    <div class="inner">
+        <h1>CSS-фреймворки на примере Bootstrap. Медиа и iframe. Flexbox. Динамические данные и шаблонизаторы.</h1>
+        <a href="https://github.com/alekskorovin/html-css-practice-9/" class="button">
+            <small>открыть на</small>
+            GitHub</a>
+    </div>
+</header>
+
+<div id="content-wrapper">
+    <div class="inner clearfix">
+        <p id="main-content">
+            <h2>
+                <a id="bootstrap" class="anchor" href="#bootstrap" aria-hidden="true"><span aria-hidden="true"
+                                                                                          class="octicon octicon-link"></span>CSS-фреймворки на примере Bootstrap.</a>
+            </h2>
+            <p>
+                <b>Bootstrap</b> (также известен как <b>Twitter Bootstrap</b>) — свободный набор инструментов для создания сайтов и веб-приложений. Включает в себя HTML- и CSS-шаблоны оформления для типографики, веб-форм, кнопок, меток, блоков навигации и прочих компонентов веб-интерфейса, включая JavaScript-расширения.
+            </p>
+            <blockquote>
+                Официальный сайт
+                <a href="http://getbootstrap.com/">http://getbootstrap.com/</a>
+            </blockquote>
+            <p>
+                Ломаный перевод на русский язык &mdash; <a href="http://getbootstrap.ru/docs/3.3.7/">http://getbootstrap.ru/docs/3.3.7/</a>, более вменяемый перевод для предыдущей версии <a href="http://bootstrap.imazin.ru/getting-started/">http://bootstrap.imazin.ru/</a>
+            </p>
+            <h3>С чего начать</h3>
+            <p>Ссылка на перевод &mdash; <a href="http://getbootstrap.ru/docs/3.3.7/getting-started/">С чего начать</a>.</p>
+            <ul>
+                <li><a href="http://bootstrap.imazin.ru/getting-started/#template">Базовый шаблон</a></li>
+                <li><a href="http://bootstrap.imazin.ru/getting-started/#examples">Примеры шаблонов</a></li>
+                <li><a href="http://bootstrap.imazin.ru/getting-started/#support-browsers">Поддержка браузерами</a></li>
+            </ul>
+            <h3>CSS</h3>
+            <p>
+                <a href="http://bootstrap.imazin.ru/css/">Общие настройки CSS</a>, стилизация основных HTML элементов с использованием расширенных классов, и передовая система разметки.
+            </p>
+            <ul>
+                <li><a href="http://bootstrap.imazin.ru/css/#overview">Обзор</a></li>
+                <li><a href="http://bootstrap.imazin.ru/css/#grid">Система разметки</a></li>
+                <li><a href="http://bootstrap.imazin.ru/css/#type">Типографика</a></li>
+                <li><a href="http://bootstrap.imazin.ru/css/#tables">Таблицы</a></li>
+                <li><a href="http://bootstrap.imazin.ru/css/#forms">Формы</a></li>
+                <li><a href="http://bootstrap.imazin.ru/css/#buttons">Кнопки</a></li>
+                <li><a href="http://bootstrap.imazin.ru/css/#images">Изображения</a></li>
+                <li><a href="http://bootstrap.imazin.ru/css/#helper-classes">Вспомогательные классы</a></li>
+            </ul>
+
+            <h3>Компоненты</h3>
+            <p>
+                Создано <a href="http://bootstrap.imazin.ru/components/">большое количество компонентов</a> для различных нужд: графические значки, выпадающие меню, группы ввода, навигационные панели, сообщения для предупреждений, и многе другое.
+            </p>
+            <ul>
+                <li><a href="http://bootstrap.imazin.ru/components/#glyphicons">Значки символов</a></li>
+                <li><a href="http://bootstrap.imazin.ru/components/#btn-dropdowns">Кнопка выпадающего меню</a></li>
+                <li><a href="http://bootstrap.imazin.ru/components/#input-groups">Группы формы ввода</a></li>
+                <li><a href="http://bootstrap.imazin.ru/components/#navbar">Навигационная панель</a></li>
+                <li><a href="http://bootstrap.imazin.ru/components/#badges">Значки</a></li>
+                <li><a href="http://bootstrap.imazin.ru/components/#thumbnails">Эскизы</a></li>
+            </ul>
+            <h3>JavaScript</h3>
+            <p>
+                <a href="http://bootstrap.imazin.ru/javascript/">Оживите компоненты Bootstrap</a> множеством пользовательских плагинов jQuery. Можете подключать их сразу все, или использовать по одному - это просто.
+            </p>
+            <ul>
+                <li><a href="http://bootstrap.imazin.ru/javascript/#modals">Модальные окна</a></li>
+                <li><a href="http://bootstrap.imazin.ru/javascript/#tabs">Переход по вкладкам</a></li>
+                <li><a href="http://bootstrap.imazin.ru/javascript/#tooltips">Подсказки</a></li>
+                <li><a href="http://bootstrap.imazin.ru/javascript/#popovers">Информеры</a></li>
+                <li><a href="http://bootstrap.imazin.ru/javascript/#alerts">Уведомления</a></li>
+                <li><a href="http://bootstrap.imazin.ru/javascript/#collapse">Сворачивание</a></li>
+                <li><a href="http://bootstrap.imazin.ru/javascript/#carousel">Карусель</a></li>
+            </ul>
+            <h3>Создание собственного Bootstrap-а</h3>
+            <p>
+                Сгенерировать собственную версию Bootstrap-а можно на специальной странице с помощью которой по заданным параметрам можно сгенерировать архив, содержащий только нужные компоненты, размеры и цвета более подходящие к проекту.
+                <br />
+                <a href="http://getbootstrap.com/customize/">http://getbootstrap.com/customize/</a>.
+            </p>
+            <div class="task">
+                <h3>Задание #1.1</h3>
+                <ol>
+                    <li>Скачать и разархивировать <a href="mobi.zip">mobi.zip</a>.</li>
+                    <li>
+                        Открыть файл <b>index-bootstrap.html</b> в котором уже подключен <b>bootstrap</b>
+                    </li>
+                    <li>
+                        Назвать строки где подключен бутстрап.
+                    </li>
+                    <li>
+                        Зайти на страницу <a href="http://getbootstrap.com/examples/jumbotron-narrow/">http://getbootstrap.com/examples/jumbotron-narrow/</a> и скопировать HTML код блока <b>jumbotron</b>.
+                    </li>
+                    <li>
+                        Вставить его в открытую в редакторе кода страницу <b>mobi/index-bootstrap.html</b> в блок с классами <b>container content-inner clearfix</b> сохранить и обновить страницу в браузере
+                        <br />
+                        <img src="images/bootstrap-jumbotron.png" alt="jumbotron"/>
+                    </li>
+                    <li>
+                        Обратить внимание на отличия в дизайне нашей страницы и примера <a href="http://getbootstrap.com/examples/jumbotron-narrow/">http://getbootstrap.com/examples/jumbotron-narrow/</a>
+                    </li>
+                </ol>
+            </div>
+            <div class="task">
+                <h3>Задание #1.2</h3>
+                <ol>
+                    <li>
+                        Открыть страницу <a href="http://getbootstrap.com/examples/carousel/">http://getbootstrap.com/examples/carousel/</a>
+                        и скопировать три колонки внутри блока <b>row</b> расположенных после комментария <b>Three columns of text below the carousel</b>
+                    </li>
+                    <li>
+                        Вставить код из буфера обмена на странице <b>mobi/index-bootstrap.html</b> после блока <b>jumbotron</b>, сохранить страницу и обновить в браузере.
+                        <br/>
+                        <img src="images/bootstrap-three-columns.png" alt="Три колонки из bootstrap"/>
+                    </li>
+                    <li>
+                        Обратить внимание на отличия в дизайне нашей страницы и примера <a href="http://getbootstrap.com/examples/carousel/">http://getbootstrap.com/examples/carousel/</a>
+                    </li>
+                </ol>
+            </div>
+            <h2>
+                <a id="media" class="anchor" href="#media" aria-hidden="true"><span aria-hidden="true"
+                                                                                            class="octicon octicon-link"></span>Медиа элементы (audio/video) и iframe.</a>
+            </h2>
+            <p>
+                В HTML5 появились теги с помощью которых в страницу можно вставлять <b>аудио</b> и <b>видео</b> ролики. В браузерах IE, поддеркжа этих тегов появилась в IE9 &mdash; <a href="http://caniuse.com/#feat=video">http://caniuse.com/#feat=video</a>.
+            </p>
+            <p>
+                До появления этих тегов использовались устаревшие теги <b>object</b> и <b>embed</b> с помощью которых вставлялись flash-файлы.
+            </p>
+            <p>
+                Для современных сайтов достаточно использовать теги:
+            </p>
+            <ul>
+                <li><code>&lt;video&gt;</code> &mdash; для вставки видео.</li>
+                <li><code>&lt;audio&gt;</code> &mdash; для вставки звуковых файлов.</li>
+            </ul>
+            <h3>video</h3>
+            <p>
+                Самый простой способ вставки видео:
+            </p>
+            <p data-height="365" data-theme-id="0" data-slug-hash="rWrrrY" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-pen-title="html5 video" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/rWrrrY/">html5 video</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>
+                Атрибут <b>control</b> добавляет элементы управления.
+            </p>
+            <p>
+                Как и с форматами шрифтов, поддержка форматов видео-файлов была различной, в настоящее время самым универсальным форматом является <b>mp4</b> (MPEG-4/H.264) &mdash; <a href="http://caniuse.com/#feat=mpeg4">http://caniuse.com/#feat=mpeg4</a>.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/HTML5_video#Browser_support"><img src="images/video-formats-support.png" alt="Поддержка видео форматов браузерами" /></a>
+            <p>
+                Если добавить атрибут <b>autoplay</b> &mdash; в браузерах где это поддерживается начнется автоматическое проигрывание видео.
+            </p>
+            <blockquote>
+                <h3>Особенность</h3>
+                Автопроигрывание не запускается на мобильных устройствах iOS: iPhone и iPad.
+            </blockquote>
+            <p data-height="317" data-theme-id="0" data-slug-hash="JbBBwa" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-pen-title="html5 video autoplay" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/JbBBwa/">html5 video autoplay</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>
+                Так же могут быть добавлены дополнительные базовые атрибуты такие как <b>width</b>, <b>height</b>, <b>loop</b> &mdash; зациклить, <b>muted</b> &mdash; звук выключен по умолчанию.
+            </p>
+            <p data-height="265" data-theme-id="0" data-slug-hash="xRJJBa" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-pen-title="html5 video autoplay loop muted" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/xRJJBa/">html5 video autoplay loop muted</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h4>Постер</h4>
+            <p>Для видео можно указать <b>постер</b> &mdash; изображение показывающееся вместо видео пока пользователь не запустил проигрывание ролика.</p>
+            <p>Указанное изображение будет растянуто по размерам элемента <b>video</b>.</p>
+            <p data-height="265" data-theme-id="0" data-slug-hash="dOjjEr" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-pen-title="html5 video poster" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/dOjjEr/">html5 video poster</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h4>Запасной вариант (fallback)</h4>
+            <p>
+                Для браузеров которые не поддерживают тег <b>video</b> можно указать внутри тега <b>video</b> любые другие теги, которые отобразятся вместо видео.
+            </p>
+            <p data-height="265" data-theme-id="0" data-slug-hash="mOjGbd" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-pen-title="html5 video poster" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/mOjGbd/">html5 video poster</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h4>Альтернативный контент</h4>
+            <p>
+                Чтобы обеспечить пользователей всеми вариантами видео-файлов, можно указать несколько файлов в разных форматах, при этом браузер сам выберет подходящий формат видео:
+            </p>
+            <p data-height="265" data-theme-id="0" data-slug-hash="ZBjMmV" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-pen-title="html5 video several sources" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/ZBjMmV/">html5 video several sources</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+
+            <h3>audio</h3>
+            <p>Добавление аудио очень сходно с добавлением видео но с помощью тега <b>audio</b>. Структура остаётся такой же как у видео. Атрибуты <b>src</b>, <b>controls</b>, <b>autoplay</b> и <b>loop</b> работают так же.</p>
+            <p data-height="199" data-theme-id="0" data-slug-hash="RoBYzK" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-pen-title="audio" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/RoBYzK/">audio</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>Поддержка тега <b>audio</b> такая же как и у тега <b>video</b> &mdash; <a href="http://caniuse.com/#search=audio">http://caniuse.com/#search=audio</a>.</p>
+            <p>
+                Формат поддерживаемый всеми браузерми это <b>mp3</b>:
+            </p>
+            <a href="https://en.wikipedia.org/wiki/HTML5_Audio"><img src="images/audio-formats-support.png" alt="Поддержка аудио форматов"/></a>
+
+            <p>
+                Для более сложных решений включающих настройку элементов управления проигрывателем используются плагины, например <a href="http://videojs.com/">VideoJS</a>, <a href="http://mediaelementjs.com/">MediaElement.js</a>. При использовании плагина есть возможность с помощью настроек плагина и стилей изменить внешний вид каждого элемента: кнопки проиграть, ползунка временной шкалы, уровня громкости и другие элементы.
+            </p>
+
+            <h3>iframe</h3>
+            <p>
+                Это тег с помощью которого на страницу можно вставить другую страницу.
+            </p>
+            <p>Основыне атрибуты <b>src</b> &mdash; URL страницы которая вставляется, <b>width</b>, <b>height</b>:</p>
+            <p data-height="552" data-theme-id="0" data-slug-hash="MbBPyR" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-pen-title="iframe" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/MbBPyR/">iframe</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>
+                В настоящее время этот тег широко используется для вставки видео на страницу видео-хостинг сервисами:
+            </p>
+            <ul>
+                <li><a href="https://www.youtube.com/">YouTube</a></li>
+                <li><a href="https://vimeo.com/">Vimeo</a></li>
+            </ul>
+            <p>Дополнительные атрибуты: <b>frameborder</b> со значением 0 убирает рамку, <b>allowfullscreen</b> &mdash; разрешает открываться элементу в полноэкранном режиме.</p>
+            <p data-height="390" data-theme-id="0" data-slug-hash="woxYMj" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-pen-title="youtube iframe" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/woxYMj/">youtube iframe</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+        <div class="task">
+            <h3>Задание #2.1</h3>
+            <ol>
+                <li>
+                    Скопировать HTML-код из примера <a href="http://codepen.io/alekskorovin/pen/woxYMj">http://codepen.io/alekskorovin/pen/woxYMj</a>
+                </li>
+                <li>Открыть страницу <b>mobi/index-bootstrap.html</b> в редакторе кода и добавить скопированный ранее код после блока с классом <b>row</b></li>
+                <li>
+                    Добавить элементу <b>iframe</b> CSS-класс <b>iframe-youtube</b> и прописать для него в CSS код для центрирования элемента по горизонтали: <code>display: block; margin: auto</code> (он отцентрируется потому что в HTML-коде задан размер).
+                    <br/>
+                    <img src="images/bootstrap-youtube.png" alt="Youtube iframe"/>
+                </li>
+            </ol>
+        </div>
+
+            <h3>Адаптивные таблицы</h3>
+            <p>Различные варианты решения проблемы &mdash; <a href="https://css-tricks.com/responsive-data-tables/">https://css-tricks.com/responsive-data-tables/</a>.</p>
+            <p>
+                Пример создания адаптивной таблицы на чистом CSS:
+            </p>
+            <p data-height="409" data-theme-id="0" data-slug-hash="dOjwbL" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-pen-title="responsive table" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/dOjwbL/">responsive table</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+
+            <h2>
+                <a id="flexbox" class="anchor" href="#flexbox" aria-hidden="true"><span aria-hidden="true"
+                                                                                            class="octicon octicon-link"></span>Flexbox.</a>
+            </h2>
+            <p>
+                Полное руководство по flexbox &mdash; <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a>.
+            </p>
+            <p>
+                Визуальное руководство по CSS3 Flexbox &mdash; <a href="https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties">https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties</a>.
+            </p>
+            <p>
+                Видео с примерами использования flexbox &mdash; <a href="https://www.youtube.com/watch?v=cr-cFGWsHM8&index=2&list=PLJ5NW5T60UphOVDsbAC97JQ2KEprVgh2r">KharkivCSS 2016 — Владимир Макуха "Flexible Box Layout"</a>
+            </p>
+            <p>
+                Увлекательная игра <a href="http://flexboxfroggy.com/">Flexbox Froggy</a>.
+            </p>
+            <div class="task">
+                <h3>Задание #3.1</h3>
+                <ol>
+                    <li>
+                        Зайти на страницу <a href="http://getbootstrap.com/examples/signin/">http://getbootstrap.com/examples/signin/</a> и скопировать HTML код блока <b>form-signin</b>.
+                    </li>
+                    <li>Открыть страницу <b>mobi/index-bootstrap.html</b> в редакторе кода и добавить скопированный ранее код после блока с классом <b>iframe-youtube</b>.</li>
+                    <li>
+                        Открыть таблицу стилей <b>mobi/css/main.css</b> и добавить стили, сохранить и обновить страницу в браузере:
+<pre><code class="css">.form-signin {
+    max-width: 320px;
+    margin: 2rem auto;
+}</code></pre>
+                    </li>
+                    <li>
+                        Обратить внимание на изменения.
+                    </li>
+                    <li>
+                        После вставленного ранее кода добавить следующий CSS-код, сохранить и обновить страницу в браузере:
+<pre><code class="css">@media (min-width: 1024px) {
+    .form-signin {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+    }
+    .content-inner .form-signin-heading {
+        margin: 0;
+        padding-right: 1rem;
+    }
+    .content-inner .checkbox {
+        padding: 0 1rem;
+    }
+}</code></pre>
+                    </li>
+                    <li>
+                        Обратить внимание на меняющийся дизайн при минимальной и максимальной ширине окна браузера:
+                        <br/>
+                        <img src="images/signup-form-flex.png" alt="Sign up с Flex"/>
+                    </li>
+                </ol>
+            </div>
+            <h2>
+                <a id="onepageapp" class="anchor" href="#onepageapp" aria-hidden="true"><span aria-hidden="true"
+                                                                                            class="octicon octicon-link"></span>Динамические данные и шаблонизаторы.</a>
+            </h2>
+            <p>
+                В одностраничных приложениях данные подгружаются с помощью JavaScript-а. Повторяющиеся фрагменты кода так же генерируются с помощью JavaScript-а. Чтобы не повторять разметку, используются шаблонизаторы. Верстается только один из повторяющихся элементов. Остальные элементы добавляются программно в зависимости от динамических данных.
+            </p>
+            <p>В JS-фреймворках как правило встроены свои шаблонизаторы.</p>
+            <p>
+                Отдельно используемые это:
+            </p>
+            <ul>
+                <li><a href="http://tryhandlebarsjs.com/">Handlebars.js</a></li>
+                <li><a href="https://mustache.github.io/#demo">Mustache</a></li>
+            </ul>
+
+            <div class="task">
+                <h3>Задание #4.1</h3>
+                <ol>
+                    <li>
+                        Открыть в браузере страницу <b>mobi/contact-our-team-static.html</b>.
+                        <br/>
+                        <img src="images/our-team.png" alt="Our Team"/>
+                    </li>
+                    <li>
+                        Открыть страницу в редакторе кода и убедиться что код статический:
+                        <img src="images/our-team-static.png" alt="Статический код"/>
+                    </li>
+                    <li>
+                        Подключившись к внешней базе данных с помощью JS мы можем отображать на странице последнюю версию данных, для этого в элементе <b>head</b> подключим библиотеки с помощью этого кода:
+<pre><code class="html">&lt;!-- Single page app --&gt;
+    &lt;!-- Firebase --&gt;
+        &lt;script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"&gt;&lt;/script&gt;
+    &lt;!-- Vue --&gt;
+        &lt;script src="https://unpkg.com/vue@latest/dist/vue.js"&gt;&lt;/script&gt;
+    &lt;!-- VueFire --&gt;
+        &lt;script src="https://unpkg.com/vuefire@1.3.0"&gt;&lt;/script&gt;
+    &lt;!-- Single page app --&gt;</code></pre>
+                    </li>
+                    <li>
+                        Теперь заменим разметку на другую, с динамическими элементами:
+<pre><code class="html">&lt;div id="app" class="row" v-show="users.length > 0"&gt;
+    &lt;div class="col-sm-4" v-for="user in users"&gt;
+        &lt;div class="panel panel-default"&gt;
+            &lt;div class="panel-heading"&gt;
+                &lt;h3 class="panel-title"&gt;{{ user.name }}&lt;/h3&gt;
+            &lt;/div&gt;
+            &lt;div class="panel-body"&gt;
+                &lt;dl&gt;
+                    &lt;dt&gt;My profession&lt;/dt&gt;
+                    &lt;dd class="text-primary"&gt;{{ user.profession }}&lt;/dd&gt;
+                    &lt;dt&gt;My email&lt;/dt&gt;
+                    &lt;dd class="text-success"&gt;{{ user.email }}&lt;/dd&gt;
+                &lt;/dl&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        <img src="images/our-team-static-template.png" alt="Template"/>
+                    </li>
+                    <li>
+                        Чтобы оживить приложение, перед закрывающим тегом <b>body</b>, надо добавить код инициализации и сохранить документ:
+<pre><code class="html">&lt;!-- Single page app --&gt;
+    &lt;script&gt;
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAJPkGsZ3VRMzg-oFcZTM_W4oWba-TS8fs",
+            authDomain: "users-b2ae6.firebaseapp.com",
+            databaseURL: "https://users-b2ae6.firebaseio.com",
+            storageBucket: "users-b2ae6.appspot.com",
+            messagingSenderId: "474600151542"
+        };
+        firebase.initializeApp(config);
+
+        var itemsRef = firebase.database().ref('users');
+
+        var app = new Vue({
+            el: "#app",
+            firebase: {
+                users: itemsRef
+            },
+        });
+    &lt;/script&gt;
+&lt;!-- Single page app --&gt;
+</code></pre>
+                    </li>
+                    <li>
+                        Обновить страницу в браузере и убедиться что используются динамические данные:
+                        <br/>
+                        <img src="images/our-team-dynamic-template.png" alt="Динамические данные"/>
+                    </li>
+                </ol>
+            </div>
+            <p>В примере использовалась заранее созданная база данных в <a href="https://firebase.google.com/">Firebase</a> и библиотека <a href="https://ru.vuejs.org/">VueJS</a>.</p>
+            <h3>Масштабирование сайта с rem-ами</h3>
+            <div class="task">
+                <h3>Задание #4.2</h3>
+                <ol>
+                    <li>
+                        В таблице стилей <b>mobi/css/main.css</b> заменить все значения в <b>max-width</b> с пикселей на <b>rem</b>.
+                    </li>
+                    <li>
+                        Добавить в таблицу стилей код:
+<pre><code class="css">@media (min-width: 1600px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media (min-width: 1900px) {
+    html {
+        font-size: 20px;
+    }
+}
+</code></pre>
+                    </li>
+                    <li>
+                        В браузере нажимая на <b>Ctrl -</b> изменить разрешение экрана на большее и убедиться что сайт не остаётся в прежнем размере а так же масштабируется относительно изменяемого разрешения.
+                    </li>
+                </ol>
+
+            <div class="task">
+                <h3>Домашнее задание</h3>
+                <ol>
+                    <li>
+                        Повторить все материалы включая последнюю запись.
+                        <ul>
+                            <li><a href="https://alekskorovin.github.io/htmlcss-basics/">Знакомство c HTML/CSS и основные понятия</a></li>
+                            <li><a href="https://alekskorovin.github.io/box-model-selectors-weight/">Структура проекта. Валидность и стиль кода. Блочная модель и "вес селекторов".</a></li>
+                            <li>
+                                <a href="https://alekskorovin.github.io/html-css-practice-1/">Псевдо-классы, псевдо-элементы, флоаты, позиционирование. Практика.</a>
+                            </li>
+                            <li>
+                                <a href="https://alekskorovin.github.io/html-css-practice-2/">Обзор новых семантических тегов. Тени, градиенты, простая анимация. Практика.</a>
+                            </li>
+                            <li>
+                                <a href="https://alekskorovin.github.io/html-css-practice-3/">Пиксельная точность. Perfect Pixel. Практика. Формы.</a>
+                            </li>
+                            <li>
+                                <a href="https://alekskorovin.github.io/html-css-practice-4/">Формы. Таблицы. Практика.</a>
+                            </li>
+                            <li>
+                                <a href="https://alekskorovin.github.io/html-css-practice-5/">Оптимизация графики. Спрайты. Знакомство с JS. Компоненты Gallery, popup. Динамический контент и стили. Препроцессоры</a>
+                            </li>
+                            <li>
+                                <a href="https://alekskorovin.github.io/html-css-practice-6/">Шрифты, их подключение. Меню. JavaScript. Системы контроля версий.</a>
+                            </li>
+                            <li>
+                                <a href="https://alekskorovin.github.io/html-css-practice-7/">Системы контроля версий. Tooltip, Dropdown. Резиновая вёрстка.</a>
+                            </li>
+                            <li>
+                                <a href="https://alekskorovin.github.io/html-css-practice-8/">Директивы CSS. Основы Адаптивного дизайна/Responsive. WordPress темы.</a>
+                            </li>
+                            <li>
+                                <a href="https://alekskorovin.github.io/html-css-practice-9/">CSS-фреймворки на примере Bootstrap. Медиа и iframe. Flexbox. Динамические данные и шаблонизаторы.</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Пройти все уровни игры <a href="http://flexboxfroggy.com/">Flexbox Froggy</a>.</li>
+                </ol>
+            </div>
+
+        </section>
+
+        <aside id="sidebar">
+            <a href="https://github.com/alekskorovin/html-css-practice-9/archive/gh-pages.zip" class="button">
+                <small>Download</small>
+                .zip file
+            </a>
+
+        </aside>
+
+    </div>
+</div>
+
+<script src="javascripts/highlight/highlight.pack.js"></script>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="javascripts/main.js"></script>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<script src="javascripts/jquery.js"></script>
+<script src="javascripts/jquery.scrollNav.min.js"></script>
+<script>
+    $('#content-wrapper').scrollNav({
+        sections: 'h2, h3, h4',
+        subSections: true,
+        sectionElem: 'div',
+        showHeadline: true,
+        headlineText: 'Перейти к'
+    });
+</script>
+</body>
+</html>
